@@ -14,11 +14,8 @@ class GatewayRoutes {
     fun carDashboardRoutes(routeLocatorBuilder: RouteLocatorBuilder): RouteLocator {
         return routeLocatorBuilder.routes {
             route {
-                path("/api/**")
-                filters {
-                    stripPrefix(1)
-                    prefixPath("/rest") }
-                uri("http://localhost:8080")
+                path("/rest/**")
+                uri("lb://car-dashboard-service")
             }
         }
     }

@@ -47,12 +47,15 @@ dependencyManagement {
 
 
 dependencies {
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin"
+
     compile("org.springframework.boot:spring-boot-starter-data-redis-reactive")
     compile("org.springframework.boot:spring-boot-starter-actuator")
+
     testCompile("org.springframework.boot:spring-boot-starter-test")
 
     compile("org.springframework.cloud:spring-cloud-starter-gateway")
-//    compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+    compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
 //    compile("org.springframework.cloud:spring-cloud-starter-netflix-hystrix")
 
     compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
