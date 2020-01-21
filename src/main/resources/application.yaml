@@ -11,3 +11,12 @@ eureka:
 spring:
   application:
     name: car-dashboard-gateway
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

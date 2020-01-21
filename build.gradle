@@ -49,7 +49,6 @@ dependencyManagement {
 dependencies {
     compile "com.fasterxml.jackson.module:jackson-module-kotlin"
 
-    compile("org.springframework.boot:spring-boot-starter-data-redis-reactive")
     compile("org.springframework.boot:spring-boot-starter-actuator")
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
