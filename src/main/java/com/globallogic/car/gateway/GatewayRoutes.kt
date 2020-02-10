@@ -13,7 +13,7 @@ class GatewayRoutes {
     fun carDashboardRoutes(routeLocatorBuilder: RouteLocatorBuilder): RouteLocator {
         return routeLocatorBuilder.routes {
             route("car-dashboard-service-route") {
-                path("/rest/**")
+                path("/car-dashboard/api/*/rest/**")
                 uri("lb://car-dashboard-service")
             }
         }
